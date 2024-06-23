@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(assets/gilroy/Gilroy-Regular.ttf);
+  }
+  
+  * {
+    font-family: Gilroy;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .main {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 225, 250);
+    background-image: url("assets/Water Bubbles Background.png");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pannel {
+    height: 93%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.555);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .p-top {
+    background-color: rgb(17, 89, 117);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    color: white;
+    gap: 10px;
+  }
+  
+  .box {
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(17, 89, 117);
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .elem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .elem h2 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .p-btm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 22px;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 15px;
+  }
+  
+  .p-btm h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(17, 89, 117);
+  }
+  
+  .p-btm h3 {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(17, 89, 117);
+  }
+  
+  .sc {
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(17, 89, 117);
+  }
+  
+  .bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(17, 89, 117);
+  }
+  
+  .bubble:hover {
+    background-color: rgb(68, 142, 171);
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsiveness */
+ 
+  @media (max-width: 1200px) {
+    .p-top {
+      padding: 0 5%;
+    }
+  
+    .p-btm h1 {
+      font-size: 50px;
+    }
+  
+    .p-btm h3, .sc {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .p-top {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .elem {
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .p-btm h1 {
+      font-size: 45px;
+    }
+  
+    .p-btm h3, .sc {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .p-top {
+      padding: 5px;
+    }
+  
+    .p-btm h1 {
+      font-size: 40px;
+    }
+  
+    .p-btm h3, .sc {
+      font-size: 25px;
+    }
+  
+    .bubble {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .p-top {
+      flex-direction: column;
+      padding: 5px;
+    }
+  
+    .elem {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .p-btm h1 {
+      font-size: 35px;
+    }
+  
+    .p-btm h3, .sc {
+      font-size: 20px;
+    }
+  
+    .bubble {
+      height: 25px;
+      width: 25px;
+    }
+  }
+  
